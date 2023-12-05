@@ -1,0 +1,96 @@
+.wrapper_texto {
+    bottom: 2em;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    top: 14em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2.narrador {
+    color: rgb(255, 196, 0);
+    margin-bottom: 1em;
+    font-size: 32px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    
+}
+
+.texto {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    transition: 100s;
+    /*animation: animate 100s infinite ease;*/
+    text-align: justify;
+}
+
+.paragrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: -3em;
+}
+
+.texto-especial {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    transition: .5s;
+    cursor: none;
+}
+
+.texto:hover {
+    letter-spacing: .9em;
+}
+
+
+.texto-especial:hover::after {
+    content: "'As vezes odeio esse horísmo em mim...'";
+    font-style: normal;
+    transform-origin: left;
+}
+
+@media  screen and (max-width: 390px) {
+  .texto {
+    font-size: 18px;
+    width: 90%;
+    font-weight: 600;
+
+  }
+
+  .texto-especial {
+    font-size: 18.5px;
+  }
+
+  h1.titulo {
+    font-size: 45px;
+  }
+}
+
+@keyframes animate {
+    from {
+        letter-spacing: 0;
+        color: white;
+    }
+
+    to {
+        letter-spacing: .7px;
+        color: rgb(255, 255, 255);
+    }
+
+
+}

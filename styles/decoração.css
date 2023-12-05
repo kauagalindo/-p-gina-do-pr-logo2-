@@ -1,0 +1,19 @@
+div.traço:hover {
+    width: 300px;
+    background-color: aqua;
+    color: aqua;
+    box-shadow: 4px 4px 12px;
+
+  }
+  
+  h1:hover, div.traço {
+      letter-spacing: .1em;
+      color: aqua;
+  }
+  
+  h1:hover::after {
+      content: "Onde tudo se consome...";
+      font-size: 13px;
+  }
+  
+
